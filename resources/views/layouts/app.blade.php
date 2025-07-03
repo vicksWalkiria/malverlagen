@@ -31,7 +31,7 @@
 </head>
 <body class="bg-white text-gray-800">
     <header class="p-4 bg-gray-100 border-b">
-        <a href="/" class="text-xl font-bold">Malvorlagen.ch</a>
+        <a href="/" class="text-xl font-bold">MalFreude.com</a>
     </header>
 
     <main class="p-4 max-w-5xl mx-auto">
@@ -39,7 +39,7 @@
     </main>
 
     <footer class="p-4 text-center text-sm text-gray-500">
-        &copy; {{ date('Y') }} Malvorlagen.ch – Alle Rechte vorbehalten.
+        &copy; {{ date('Y') }} MalFreude.com – Alle Rechte vorbehalten.
     </footer>
 </body>
 </html>

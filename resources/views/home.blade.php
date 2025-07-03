@@ -8,13 +8,8 @@
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "Malspass Schweiz",
-      "url": "https://www.malspass.ch/",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://www.malspass.ch/suche?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
+      "name": "MalFreude Schweiz",
+      "url": "https://www.malfreude.com/",
     }
     </script>
 
@@ -34,21 +29,21 @@
                     Tauchen Sie ein in eine Welt voller Farben und Kreativität! Wählen Sie aus über 200 einzigartigen Malvorlagen in verschiedenen Kategorien.
                 </p>
                 <div class="flex flex-wrap justify-center gap-4 text-lg">
-                    <span class="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-gray-700 shadow-sm">
+                    <a href="{{ route('category.drawings', "tiere") }}" class="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-gray-700 shadow-sm hover:bg-white transition">
                         🐶 Tiere
-                    </span>
-                    <span class="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-gray-700 shadow-sm">
+                    </a>
+                    <a href="{{ route('category.drawings', "fahrzeuge") }}" class="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-gray-700 shadow-sm hover:bg-white transition">
                         🚗 Fahrzeuge
-                    </span>
-                    <span class="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-gray-700 shadow-sm">
+                    </a>
+                    <a href="{{ route('category.drawings', "anime") }}" class="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-gray-700 shadow-sm hover:bg-white transition">
                         🎌 Anime
-                    </span>
-                    <span class="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-gray-700 shadow-sm">
+                    </a>
+                    <a href="{{ route('category.drawings', "weihnachten") }}" class="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-gray-700 shadow-sm hover:bg-white transition">
                         🎄 Weihnachten
-                    </span>
-                    <span class="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-gray-700 shadow-sm">
+                    </a>
+                    <a href="{{ route('category.drawings', "ostern") }}" class="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-gray-700 shadow-sm hover:bg-white transition">
                         🐰 Ostern
-                    </span>
+                    </a>
                 </div>
                 <div class="mt-8 text-gray-600">
                     <p class="font-medium">Einfach als PDF oder SVG herunterladen • Ausdrucken • Sofort loslegen!</p>
