@@ -11,10 +11,10 @@ Route::get('/', function () {
 use App\Http\Controllers\DrawingController;
 
 // Página por categoría
-Route::get('/malvorlagen/{category:slug}', [DrawingController::class, 'index'])->name('category.drawings');
+Route::get('/{category:slug}', [DrawingController::class, 'index'])->name('category.drawings');
 
 // Página individual del dibujo
-Route::get('/malvorlagen/{category:slug}/{drawing:slug}', [DrawingController::class, 'show'])->name('drawing.show');
+Route::get('/{category:slug}/{drawing:slug}', [DrawingController::class, 'show'])->name('drawing.show');
 
 // Descargar SVG
 Route::get('/download/svg/{drawing:slug}', [DrawingController::class, 'downloadSvg'])->name('drawing.download.svg');
