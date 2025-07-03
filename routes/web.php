@@ -12,6 +12,9 @@ use App\Http\Controllers\DrawingController;
 use App\Http\Controllers\SitemapController;
 
 Route::get('/sitemap.xml', [SitemapController::class, 'index']);
+Route::view('/impressum', 'impressum');
+Route::view('/datenschutz', 'datenschutz');
+Route::view('/ueber-mich', 'ueber-mich');
 
 // Página por categoría
 Route::get('/{category:slug}', [DrawingController::class, 'index'])->name('category.drawings');

@@ -38,8 +38,12 @@
         @yield('content')
     </main>
 
-    <footer class="p-4 text-center text-sm text-gray-500">
-        &copy; {{ date('Y') }} MalFreude.com – Alle Rechte vorbehalten.
+    <footer class="p-4 text-center text-sm text-gray-500 space-x-4">
+        &copy; {{ date('Y') }} MalFreude.com – Alle Rechte vorbehalten. 
+        <a href="/impressum" class="underline hover:text-gray-700">Impressum</a>
+        <a href="/datenschutz" class="underline hover:text-gray-700">Datenschutz</a>
+        <a href="/ueber-mich" class="underline hover:text-gray-700">Über mich</a>
     </footer>
+
 </body>
 </html>
